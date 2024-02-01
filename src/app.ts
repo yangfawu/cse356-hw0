@@ -2,6 +2,9 @@ import express from "express"
 import logger from "morgan"
 import path from "path"
 
+// load .env variables
+import "dotenv/config"
+
 // middleware
 import generalErrorHandler from "./middlewares/general-error-handler"
 import notFoundHandler from "./middlewares/not-found-handler"
