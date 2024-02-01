@@ -5,6 +5,7 @@
     "scripts": {
         "start": "ts-node -r tsconfig-paths/register src/server.ts",
         "dev": "ts-node-dev -r tsconfig-paths/register src/server.ts",
+        "serve": "pm2 start npm -- start",
         "lint": "eslint src/*.ts",
         "lint:fix": "npm run lint --fix",
         "prettier": "prettier src/*.ts",
