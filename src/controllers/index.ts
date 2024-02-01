@@ -1,7 +1,7 @@
-import { Request, Response } from "express"
+import type { Request, Response } from "express"
 
 async function get(req: Request, res: Response) {
-    res.json({ message: "Hello World!" })
+    res.sendStatus(200)
 }
 
 const rootController = {
